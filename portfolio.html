@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<body>
+  <center><br>
+    <br>
+    <br>
+  <img src="profile.jpg" alt="profile">
+</center>
+  <style>
+    /* CSS Reset */
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    /* Navigation Bar */
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+    /* Hero Section */
+    header.hero {
+      background: url('your-hero-image.jpg') no-repeat center center/cover;
+      height: 30vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      margin-top: 30px; /* To avoid overlay by fixed nav */
+    }
+    
+    header.hero h1 {
+      font-size: 3em;
+      margin-bottom: 1px;
+      align-items: center;
+      justify-content: center;
+    }
+    header.hero p {
+      font-size: 1.5em;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+    }
+    /* Sections */
+    section {
+      padding: 60px 0;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5em;
+    }
+    /* About Section */
+    #about p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      height: 30vh;
+      font-size: 1.2em;
+      padding: 0 10px;
+    }
+    /* Projects Section */
+    #projects {
+      background: #f4f4f4;
+    }
+    #projects .project {
+      display: inline-block;
+      width: 300px;
+      margin: 15px;
+      vertical-align: top;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      background: #fff;
+    }
+    #projects .project img {
+      width: 100%;
+      height: auto;
+    }
+    #projects .project .project-info {
+      padding: 15px;
+    }
+    #projects .project .project-info h3 {
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+    /* Contact Section */
+    #contact {
+      text-align: center;
+    }
+    #contact a {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      #projects .project {
+        width: 90%;
+        margin: 15px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm A.Sachin, a Web Developer</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm A.Sachin—a passionate web developer with experience in building dynamic websites using HTML, CSS, and JavaScript.
+        I love turning complex problems into simple, beautiful designs.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <!-- Project 1 -->
+      <div class="project">
+        <img src="1710486640359.jpg" alt="Project 1" />
+        <div class="project-info">
+          <h3>Project One</h3>
+          <p>A brief description of this project goes here. It covers the main technologies used and the purpose of the project.</p>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project">
+        <img src="istockphoto-1411195926-612x612.jpg" alt="Project 2" />
+        <div class="project-info">
+          <h3>Project Two</h3>
+          <p>A brief description of this project goes here. It covers the main technologies used and the purpose of the project.</p>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project">
+        <img src="62a126448e54eb0f7767d290_pexels-fauxels-3183186.jpg" alt="Project 3" />
+        <div class="project-info">
+          <h3>Project Three</h3>
+          <p>A brief description of this project goes here. It covers the main technologies used and the purpose of the project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>
+        Feel free to reach out via email: 
+        <a href="mailto:john@example.com">sachin@example.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 sachin. All rights reserved.</p>
+  </footer>
+    
+</body>
+</html>
